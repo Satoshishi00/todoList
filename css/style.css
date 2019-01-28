@@ -1,0 +1,176 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #4a69bd;
+    background-image: url(../images/prism.png);
+    padding: 5% 20%;
+}
+
+.div-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+h1  {
+    color:  yellow;
+    font-size: 3rem;
+}
+
+button {
+    height: 40px;
+    background-color: #4a69bd;
+    border-radius: 3px;
+    border: solid 1px #4a69bd;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: yellow;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: #4a69bd;
+    transition: background 0.6s;
+}
+
+
+.todo--container {
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem auto;
+    background-color: #4a69bd;
+    box-shadow: 1px 1px 3px #34495e;
+    border-radius: .325rem;
+}
+
+
+.todo {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(60, 60, 60, 0.5);
+    transition: all 0.6s ease;
+    justify-content: space-around;
+    align-items: center;
+    color : black;
+}
+
+.todo:hover {
+    background-color: yellow;
+}
+
+.todo--title {
+    margin-top: 10px;
+    margin-bottom: 11px;
+    width : 80%;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.todo--update-form {
+    width: 80%;
+    justify-content: space-between;
+    left:0;
+}
+
+
+.update-btn {
+    margin-right: 0px;
+}
+
+.saisi-update {
+    width: 80%;
+}
+
+.update-icon:hover {
+    color: #EA2027;
+    cursor: pointer;
+}
+
+.delete-icon {
+    color:black;
+}
+
+.delete-icon:hover {
+    color: #EA2027;
+    cursor: pointer;
+}
+
+
+.modal-component {
+    display: none;
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.modal-content {
+   
+ 
+    width: 60%;
+    background-color: #fff;
+    position :relative;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 3px 3px 3px #222;
+}
+
+.icon-close {
+    position: absolute;
+    height: 0;
+    right: 0;
+    margin: 1rem;
+    
+}
+
+.icon-close:hover i {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 0.6s;
+}
+
+.title-modal {
+    margin: 2.2rem;
+    color: #4a69bd;
+}
+
+
+
+form {
+    text-align: center;
+}
+
+
+.input-modal {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+input {
+    height: 36px;
+    border-radius: 3px;
+    border: grey 1px solid;
+    padding-left: 5px;
+}
+
+.add-new-todo {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 1rem;
+}
+
