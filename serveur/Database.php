@@ -1,5 +1,7 @@
 <?php
 
+    //Classe de connexion à la bdd;
+
     class Database {
         
         private $host = 'localhost';

@@ -2,6 +2,8 @@
 
     require 'Database.php';
 
+    //Classe de CRUD sur la bdd;
+
     class Todo {
         
         private $bdd;
@@ -14,6 +16,12 @@
             $this->bdd->query('SELECT * FROM todolist');
             return $this->bdd->resultSet();
         }
+
+        public function getTodo($id) {
+            $this->query('SELECT * FROM todolist where id = :id');
+            $this->bind(':id', $id);
+            return $this->db->single();
+          }
 
         public function add($data) {
             $this->bdd->query('INSERT INTO todolist (todo) VALUES (:todo)');

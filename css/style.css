@@ -6,6 +6,8 @@ body {
     padding: 5% 20%;
 }
 
+/* ---------------- Header -------------- */
+
 .div-content {
     display: flex;
     align-items: center;
@@ -19,25 +21,15 @@ h1  {
     font-size: 3rem;
 }
 
-button {
-    height: 40px;
-    background-color: #4a69bd;
-    border-radius: 3px;
-    border: solid 1px #4a69bd;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: yellow;
-    padding-right: 15px;
-    padding-left: 15px;
+.add-new-todo {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: 1rem;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: yellow;
-    color: #4a69bd;
-    transition: background 0.6s;
-}
 
+/* ---------------- Elements de la table todolist -------------- */
 
 .todo--container {
     overflow: hidden;
@@ -87,6 +79,7 @@ button:hover {
 
 .saisi-update {
     width: 80%;
+    font-size: 16px;
 }
 
 .update-icon:hover {
@@ -103,8 +96,9 @@ button:hover {
     cursor: pointer;
 }
 
+/* ---------------- Modale -------------- */
 
-.modal-component {
+.modal--component {
     display: none;
     background-color: rgba(0,0,0,0.6);
     width: 100vw;
@@ -118,9 +112,7 @@ button:hover {
     
 }
 
-.modal-content {
-   
- 
+.modal--content {
     width: 60%;
     background-color: #fff;
     position :relative;
@@ -148,17 +140,17 @@ button:hover {
     color: #4a69bd;
 }
 
-
-
-form {
-    text-align: center;
+.form-modal {
+    text-align:center;
 }
-
 
 .input-modal {
     width: 80%;
     margin-bottom: 100px;
 }
+
+
+/* Mise en forme des buttons et inputs #sauce_maison */
 
 input {
     height: 36px;
@@ -167,10 +159,22 @@ input {
     padding-left: 5px;
 }
 
-.add-new-todo {
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    margin: 1rem;
+button {
+    height: 40px;
+    background-color: #4a69bd;
+    border-radius: 3px;
+    border: solid 1px #4a69bd;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: yellow;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: #4a69bd;
+    transition: background 0.6s;
 }
 
